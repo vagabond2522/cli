@@ -1,3 +1,6 @@
+# Skip if Bash is not available given script extension
+[!exec:bash] skip
+
 # Setup environment variables used for testscript
 env EXT_NAME=${SCRIPT_NAME}-${RANDOM_STRING}
 env EXT_SCRIPT=gh-${EXT_NAME}
